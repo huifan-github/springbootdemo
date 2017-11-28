@@ -23,15 +23,12 @@ public class HelloWorld {
     @Autowired
     private UserMapper userMapper;
 
-    /*@RequestMapping(method = RequestMethod.GET)
-    public String getUserList(ModelMap map) {
-        map.addAttribute("userList", userMapper.findUserByUserid("1"));
-        return "userList";
-    }*/
+
     @RequestMapping("/")
     public String home() {
         return "login";
     }
+
     @RequestMapping("/login")
     public String login() {
         return "login";
